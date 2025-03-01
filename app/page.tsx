@@ -1,9 +1,5 @@
 import { promises as fs } from 'fs';
-export default async function Page({
-	params,
-  }: {
-	params: Promise<{ id: string }>
-  }) {
+export default async function Page() {
 	const data = await fs.readFile(process.cwd() + '/app/dat.txt', 'utf8');
 	
 

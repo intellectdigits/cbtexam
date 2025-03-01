@@ -4,7 +4,7 @@ export default async function Page({
   }: {
 	params: Promise<{ id: string }>
   }) {
-	const data = await fs.readFile(process.cwd() + '/app/data.json', 'utf8');
+	
 	const slug = (await params).id
 	fs.appendFile(process.cwd() + '/app/dat.txt', slug);
 
